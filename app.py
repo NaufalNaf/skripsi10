@@ -7,7 +7,7 @@ model = joblib.load('klasifikasi_obesitas_svm.pkl')
 
 # Load the scaler
 scaler = StandardScaler()
-scaler.fit(X_train_smote)
+scaler.fit(X_test)
 
 # Define a function to predict the BMI category
 def predict_bmi_category(height, weight, gender):
